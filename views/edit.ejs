@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit Item/Product</h1>
+    <form action="/product/<%=product._id%>?_method=PUT" method="POST">
+    NAME: <input type="text" name="name"/>
+    DESCRIPTION: <input type="text" name="description"/>
+    IMG: <input type="image" name="img" />
+    PRICE: <input type="number" name="price" />
+    QTY: <input type="number" name="qty" />
+    <input type="submit" value="edit product" />
+    </form>
+</body>
+</html>
